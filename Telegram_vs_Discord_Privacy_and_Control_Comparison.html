@@ -1,0 +1,76 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Telegram vs Discord — Privacy & Control (Read-only)</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; margin: 24px; }
+  table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+  thead th { background: #111; color: #fff; padding: 10px; text-align: left; }
+  tbody td, tbody th { border-top: 1px solid #ddd; padding: 10px; vertical-align: top; word-wrap: break-word; white-space: pre-wrap; }
+  tbody tr:nth-child(odd) { background: #f9f9f9; }
+  .container { max-width: 1100px; margin: auto; }
+  caption { caption-side: top; text-align: left; font-weight: bold; font-size: 1.2em; margin-bottom: 8px; }
+</style>
+</head><body><div class='container'><h1>Telegram vs Discord — Privacy & Control (Read-only)</h1><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Feature / Data Type</th>
+      <th>Telegram</th>
+      <th>Discord</th>
+      <th>Implication</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Client Code (app on device)</td>
+      <td>✅ Open-source (verifiable, modifiable)</td>
+      <td>❌ Closed-source (opaque, unverifiable)</td>
+      <td>Telegram lets users inspect or alter the app they install. Discord does not.</td>
+    </tr>
+    <tr>
+      <td>Server Code (message routing, storage, control)</td>
+      <td>❌ Closed-source (centralized, unverifiable)</td>
+      <td>❌ Closed-source (centralized, unverifiable)</td>
+      <td>Both platforms keep server logic hidden, so message storage, moderation, or misuse can't be verified.</td>
+    </tr>
+    <tr>
+      <td>Self-hosting Possible?</td>
+      <td>❌ No</td>
+      <td>❌ No</td>
+      <td>Users depend fully on the provider's infrastructure and policies.</td>
+    </tr>
+    <tr>
+      <td>End-to-End Encryption</td>
+      <td>🟡 Only in 'Secret Chats' (manual opt-in)</td>
+      <td>❌ No end-to-end encryption</td>
+      <td>Only Telegram supports true privacy on some chats. Most messages on both platforms can be read by the server owner.</td>
+    </tr>
+    <tr>
+      <td>Voice Messages</td>
+      <td>✅ Claimed encrypted in transit & at rest, user-exportable</td>
+      <td>❌ No export, no clear encryption guarantees</td>
+      <td>Telegram gives more access and control over voice data. Encryption is claimed, not independently verifiable.</td>
+    </tr>
+    <tr>
+      <td>Voice Calls / Chats</td>
+      <td>🔒 Peer-to-peer if possible, otherwise routed via Telegram (claims encryption)</td>
+      <td>❌ Routed via Discord servers, no end-to-end encryption</td>
+      <td>Telegram attempts private calls. Discord calls can be intercepted or logged by Discord.</td>
+    </tr>
+    <tr>
+      <td>Custom Clients Allowed?</td>
+      <td>✅ Yes (via open API)</td>
+      <td>❌ No (ToS violation)</td>
+      <td>Telegram lets others build alternate apps. Discord enforces monopoly over the user interface.</td>
+    </tr>
+    <tr>
+      <td>Data Portability (Can you export your stuff?)</td>
+      <td>✅ Yes (official export tool available)</td>
+      <td>❌ No official full export</td>
+      <td>Telegram users can retrieve and keep their message/voice/media history. Discord users cannot.</td>
+    </tr>
+    <tr>
+      <td>Account Suspension / Bans</td>
+      <td>✅ Possible (rare, low-transparency enforcement)</td>
+      <td>✅ Possible (automated enforcement widely applied)</td>
+      <td>Both platforms can suspend accounts. Discord uses more aggressive, automated moderation based on user reports.</td>
+    </tr>
+  </tbody>
+</table></div></body></html>
